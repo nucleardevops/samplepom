@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <!-- Use a supported Java version; adjust to 11 if needed -->
+    <!-- Target Java version -->
     <maven.compiler.release>17</maven.compiler.release>
   </properties>
 
@@ -27,7 +27,7 @@
 
   <build>
     <plugins>
-      <!-- Modern compiler plugin; uses --release 17 -->
+      <!-- Maven Compiler Plugin configured for Java 17 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -37,7 +37,7 @@
         </configuration>
       </plugin>
 
-      <!-- Update WAR plugin; keep failOnMissingWebXml for Servlet 3.x -->
+      <!-- Maven WAR Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
